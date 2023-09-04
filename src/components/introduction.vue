@@ -12,7 +12,11 @@
          <div
             class="content_wrapper mt-6 flex flex-row gap-6 text-center text-8xl font-[900]"
          >
-            <h1>TRUTH · FAITH · SERVICE</h1>
+            <h1>
+               TRUTH <span class="hidden md:inline-block">·</span> FAITH
+               <span class="hidden lg:inline-block">·</span>
+               SERVICE
+            </h1>
          </div>
          <div class="z-[2] mt-[85px]">
             <button
@@ -53,8 +57,7 @@ export default {
    text-stroke: 1.5px #fff;
    z-index: 2;
 }
-.content_wrapper h1 {
-}
+
 section .mask {
    position: absolute;
    top: 0;
