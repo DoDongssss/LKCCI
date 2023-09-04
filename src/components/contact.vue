@@ -160,13 +160,17 @@ export default {
    methods: {
       handleCaptcha() {
          this.submitBtn.disabled = true
-         grecaptcha.enterprise.ready(async () => {
-            const token = await grecaptcha.enterprise.execute(
-               "6Le6IvcnAAAAAMDbWTM4VcqmMFYx4YPggDbdFS-B",
-               { action: this.handleSubmit() }
-            )
-            this.emailJSdata.template_params["g-recaptcha-response"] = token
-         })
+         grecaptcha.enterprise
+            .ready(async () => {
+               const token = await grecaptcha.enterprise.execute(
+                  "6Le6IvcnAAAAAMDbWTM4VcqmMFYx4YPggDbdFS-B",
+                  { action: "submit" }
+               )
+            })
+            .then((token) => {
+               this.emailJSdata.template_params["g-recaptcha-response"] = token
+               this.handleSubmit()
+            })
       },
       async handleSubmit() {
          this.emailJSdata.template_params["from_name"] = this.senderData.name
@@ -187,7 +191,7 @@ export default {
                   (this.senderData.message = null),
                   (this.submitBtn.disabled = false)
                /* prettier-ignore */
-               setTimeout( ()=>{
+               setTimeout( ()=>{ 
                   this.status = false
                }, 10000)
             })

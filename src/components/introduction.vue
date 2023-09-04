@@ -10,13 +10,11 @@
             LIBERTAD KIDDIE CARE CENTER INC.
          </h1>
          <div
-            class="content_wrapper mt-6 flex flex-col gap-6 text-center text-8xl font-[900]"
+            class="content_wrapper mt-6 flex flex-row gap-6 text-center text-8xl font-[900]"
          >
-            <h1>TRUTH</h1>
-            <h1>FAITH</h1>
-            <h1>SERVICE</h1>
+            <h1>TRUTH · FAITH · SERVICE</h1>
          </div>
-         <div class="z-[2] mt-12">
+         <div class="z-[2] mt-[85px]">
             <button
                class="text-md rounded-sm border-2 border-[#fd0002] bg-[#fd0002] px-8 py-3 text-white transition-all duration-300 ease-linear hover:bg-transparent"
             >
@@ -51,8 +49,8 @@ export default {
    color: transparent;
    background-size: cover; /* Adjust the background size as needed */
    display: inline-block; /* To make the background cover the text */
-   -webkit-text-stroke: 0.5px #fff; /* WebKit browsers (Safari) */
-   text-stroke: 0.5px #fff;
+   -webkit-text-stroke: 1.5px #fff; /* WebKit browsers (Safari) */
+   text-stroke: 1.5px #fff;
    z-index: 2;
 }
 .content_wrapper h1 {
