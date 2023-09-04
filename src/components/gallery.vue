@@ -165,13 +165,12 @@ export default {
          //    description: "Sunken dreams II. by Arbebuk",
          // },
       ]
-      const useswiper = useSwiper()
+
       const onSwiper = (swiper) => {
          console.log(swiper)
       }
 
       return {
-         useswiper,
          gallery,
          onSwiper,
          EffectCards,

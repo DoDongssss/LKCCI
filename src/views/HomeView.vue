@@ -94,7 +94,6 @@ export default {
                   rect.bottom >= window.innerHeight / 2
                ) {
                   this.activeSection = section
-                  // console.log(this.activeSection)
                   break
                }
             }

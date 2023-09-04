@@ -67,9 +67,21 @@
                <button
                   ref="submitBtn"
                   type="submit"
-                  class="rounded-md bg-[#020066] px-8 py-3 font-semibold text-white transition-all duration-200 ease-linear hover:bg-[#11d186]"
+                  class="flex rounded-md bg-[#020066] px-8 py-3 font-semibold text-white transition-all duration-200 ease-linear hover:bg-[#11d186]"
                >
-                  SUBMIT
+                  <div class="flex items-center" v-if="process == true">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="... mr-3 h-5 w-5 animate-spin fill-yellow-500"
+                        viewBox="0 0 512 512"
+                     >
+                        <path
+                           d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"
+                        />
+                     </svg>
+                     <span> Processing . . .</span>
+                  </div>
+                  <span v-if="process == false">Submit</span>
                </button>
             </div>
          </form>
@@ -130,6 +142,7 @@ import axios from "axios"
 export default {
    setup() {
       const status = ref(false)
+      const process = ref(false)
       const submitBtn = ref()
       const senderData = ref({
          name: "",
@@ -155,11 +168,13 @@ export default {
          senderData,
          status,
          submitBtn,
+         process,
       }
    },
    methods: {
       handleCaptcha() {
          this.submitBtn.disabled = true
+         this.process = true
          grecaptcha.enterprise.ready(async () => {
             const token = await grecaptcha.enterprise
                .execute("6Le6IvcnAAAAAMDbWTM4VcqmMFYx4YPggDbdFS-B", {
@@ -183,7 +198,9 @@ export default {
                this.emailJSdata
             )
             .then((res) => {
+               this.process = false
                this.status = true
+
                /* prettier-ignore */
                ;(this.senderData.name = null),
                   (this.senderData.email = null),
@@ -191,9 +208,10 @@ export default {
                   (this.senderData.message = null),
                   (this.submitBtn.disabled = false)
                /* prettier-ignore */
+
                setTimeout( ()=>{ 
                   this.status = false
-               }, 10000)
+               }, 8000)
             })
             .catch((err) => {
                this.submitBtn.disabled = false
