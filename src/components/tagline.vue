@@ -2,8 +2,12 @@
    <section
       class="flex h-screen flex-col items-center justify-center bg-[url('/images/tagline_bg.jpg')] bg-cover"
    >
-      <span class="h-[3px] w-[800px] rounded-full bg-[#FFB300]"></span>
-      <div class="mt-7 max-w-[850px] text-center text-[40px] leading-normal">
+      <span
+         class="h-[2.5px] w-[100px] rounded-full bg-[#FFB300] lg:w-[800px]"
+      ></span>
+      <div
+         class="text-md mt-7 max-w-[850px] px-6 text-center leading-normal lg:text-[40px]"
+      >
          “At <span class="font-bold text-[#020066]">LKCCI</span> we care about
          building a vibrant learning community where
          <span class="font-bold text-[#fd0002]"
@@ -12,10 +16,10 @@
       </div>
       <div
          onclick="coreCompetencies.showModal()"
-         class="group mt-[65px] flex items-center"
+         class="group mt-[50px] flex items-center lg:mt-[65px]"
       >
          <span
-            class="cursor-pointer text-lg font-semibold transition-colors duration-200 ease-linear hover:text-[#FFB300]"
+            class="cursor-pointer text-sm font-semibold transition-colors duration-200 ease-linear hover:text-[#FFB300] lg:text-lg"
             >CORE COMPETENCIES</span
          >
          <svg

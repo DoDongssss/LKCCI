@@ -3,12 +3,12 @@
    <headerSection :scrollPos="scrollPosition" :activeSection="activeSection" />
    <main class="flex flex-col gap-[75px]">
       <introductionSection :scrollPos="scrollPosition" id="home" />
-      <div class="flex flex-col gap-[75px] px-[150px]">
+      <div class="flex flex-col gap-[75px] px-6 lg:px-[150px]">
          <aboutSection id="about" />
          <chooseSection id="fundamentals" />
       </div>
       <taglineSection id="competencies" />
-      <div class="flex flex-col gap-[75px] px-[150px]">
+      <div class="flex flex-col gap-[75px] px-6 lg:px-[150px]">
          <gallerySection id="gallery" />
          <accreditationSection id="affiliations" />
          <contactSection id="contact" />

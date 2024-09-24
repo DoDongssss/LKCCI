@@ -1,5 +1,5 @@
 <template>
-   <section class="h-screen">
+   <section class="">
       <div class="relative flex items-center">
          <h1 class="text-3xl font-[900] text-[#020066]">WHY CHOOSE US?</h1>
       </div>
@@ -10,9 +10,9 @@
             3 Fundamentals
          </h1>
       </div>
-      <div class="mt-12 flex gap-6">
+      <div class="mt-12 flex flex-wrap gap-6">
          <div
-            class="flex w-[calc((100%/3)-8px)] flex-col items-center rounded-md border border-gray-300 p-6 shadow-xl"
+            class="flex w-[calc((100%/3)-8px)] min-w-[300px] flex-1 flex-col items-center rounded-md border border-gray-300 p-6 shadow-xl"
          >
             <img src="/icons/student.png" alt="" class="h-[100px] w-[100px]" />
             <h1 class="mt-8 text-2xl font-bold">LOREM IPSUM</h1>
@@ -28,7 +28,7 @@
             </p>
          </div>
          <div
-            class="flex w-[calc((100%/3)-8px)] flex-col items-center rounded-md border border-gray-300 p-6 shadow-xl"
+            class="flex w-[calc((100%/3)-8px)] min-w-[300px] flex-1 flex-col items-center rounded-md border border-gray-300 p-6 shadow-xl"
          >
             <img src="/icons/student.png" alt="" class="h-[100px] w-[100px]" />
             <h1 class="mt-8 text-2xl font-bold">LOREM IPSUM</h1>
@@ -44,7 +44,7 @@
             </p>
          </div>
          <div
-            class="flex w-[calc((100%/3)-8px)] flex-col items-center rounded-md border border-gray-300 p-6 shadow-xl"
+            class="flex w-[calc((100%/3)-8px)] min-w-[300px] flex-1 flex-col items-center rounded-md border border-gray-300 p-6 shadow-xl"
          >
             <img src="/icons/student.png" alt="" class="h-[100px] w-[100px]" />
             <h1 class="mt-8 text-2xl font-bold">LOREM IPSUM</h1>

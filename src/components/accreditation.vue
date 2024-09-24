@@ -16,7 +16,7 @@
          </p>
          <div class="mt-6 flex w-full flex-wrap gap-6">
             <div
-               class="relative flex w-[calc(100%/3-16px)] min-w-[270px] max-w-[calc(100%/3-16px)] flex-1 flex-col"
+               class="relative flex w-[calc(100%/3-16px)] min-w-[270px] flex-1 flex-col lg:max-w-[calc(100%/3-16px)]"
             >
                <div
                   class="image-container relative h-[250px] cursor-pointer overflow-hidden rounded-[5px]"
@@ -40,7 +40,7 @@
                </p>
             </div>
             <div
-               class="relative flex w-[calc(100%/3-16px)] min-w-[270px] max-w-[calc(100%/3-16px)] flex-1 flex-col"
+               class="relative flex w-[calc(100%/3-16px)] min-w-[270px] flex-1 flex-col lg:max-w-[calc(100%/3-16px)]"
             >
                <div
                   class="image-container relative h-[250px] cursor-pointer overflow-hidden rounded-[5px]"
@@ -64,7 +64,7 @@
                </p>
             </div>
             <div
-               class="relative flex w-[calc(100%/3-16px)] min-w-[270px] max-w-[calc(100%/3-16px)] flex-1 flex-col"
+               class="relative flex w-[calc(100%/3-16px)] min-w-[270px] flex-1 flex-col lg:max-w-[calc(100%/3-16px)]"
             >
                <div
                   class="image-container relative h-[250px] cursor-pointer overflow-hidden rounded-[5px]"

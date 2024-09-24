@@ -3,8 +3,8 @@
       <div class="relative flex items-center">
          <h1 class="text-3xl font-[900] text-[#020066]">ABOUT</h1>
       </div>
-      <div class="flex">
-         <div class="w-1/2 min-w-[400px] flex-1">
+      <div class="flex flex-col lg:flex-row">
+         <div class="w-full min-w-[250px] flex-1 lg:w-1/2">
             <h2 class="mt-8 text-2xl font-bold text-[#fd0002]">
                Lorem ipsum dolor sit amet consectetur
             </h2>
@@ -20,7 +20,10 @@
                dolores exercitationem ad, voluptatum facilis repudiandae placeat
                distinctio porro, soluta totam delectus cum!
             </p>
-            <a href="#" class="link_wrapper group mt-[50px] flex items-center">
+            <a
+               href="#"
+               class="link_wrapper group mt-[50px] flex items-center justify-center"
+            >
                <span
                   class="text-sm font-semibold transition-colors duration-300 group-hover:text-[#FFB300]"
                   >DISCOVER MORE</span
@@ -53,7 +56,7 @@
             </a>
          </div>
          <div
-            class="flex w-1/2 min-w-[400px] flex-1 items-center justify-center rounded-md p-6"
+            class="flex w-full min-w-[250px] flex-1 items-center justify-center rounded-md p-6 lg:w-1/2"
          >
             <!-- <img
                :src="selectedImg"

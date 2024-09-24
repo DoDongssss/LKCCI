@@ -1,12 +1,12 @@
 <template>
    <section class="flex h-fit items-center justify-center">
       <div
-         class="flex h-[725px] w-[550px] items-center justify-center rounded-l-md border-2 border-[#020066] bg-[#020066]"
+         class="hidden h-[725px] w-[550px] items-center justify-center rounded-l-md border-2 border-[#020066] bg-[#020066] lg:flex"
       >
          <img src="/gif/contact.gif" alt="" class="h-[400px] w-[400px]" />
       </div>
       <div
-         class="h-[725px] w-[550px] rounded-r-md border-2 border-l-0 border-[#11d186] p-12"
+         class="h-[725px] w-[550px] rounded-md border-2 border-[#11d186] p-6 lg:rounded-r-md lg:border-l-0 lg:p-12"
       >
          <div>
             <h1 class="text-2xl font-semibold">Welcome to LKCCI</h1>
